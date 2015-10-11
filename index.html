@@ -1,28 +1,280 @@
 <!DOCTYPE HTML>
 <html>
-<head>
-  <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+  <head>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+    <title>Laws of Logic</title>
+    <link rel="stylesheet" type="text/css" href="my.css" />
+    <link rel="stylesheet" type="text/css" href="zy.css" />
+  </head>
+  <body>
+    <div class="content-resource-container-static section-content">
+      <h1>Table 1.4.4: Laws of Propositional Logic</h1>
+      <div class="table">
+        <table style="cellpadding:4px;">
+          <tbody>
+            <tr>
+              <td>Idempotent laws:</td>
 
-  <title>Laws of Logic</title>
-  <style type="text/css" media="all">
-    .images img {
-      float: left;
-    }
-    footer {
-      clear: both;
-      text-align: center;
-    }
-  </style>
-  
-</head>
-<body>
-  <div class="images">
-    <img src="img/Laws of Prop Logic.png"/>
-    <img src="img/De Morgan's Laws for Quantified Statements.png" />
-    <img src="img/De Morgan's Laws for Nested Quantified Statements.png" />
-  </div>
-  <footer>
-    <a href="https://github.com/fatehitech/logic-laws">https://github.com/fatehitech/logic-laws</a>
-  </footer>
-</body>
+              <td>p ∨ p ≡ p</td>
+
+              <td>p ∧ p ≡ p</td>
+            </tr>
+
+            <tr>
+              <td>Associative laws:</td>
+
+              <td>( p ∨ q ) ∨ r ≡ p ∨ ( q ∨ r )</td>
+
+              <td>( p ∧ q ) ∧ r ≡ p ∧ ( q ∧ r )</td>
+            </tr>
+
+            <tr>
+              <td>Commutative laws:</td>
+
+              <td>p ∨ q ≡ q ∨ p</td>
+
+              <td>p ∧ q ≡ q ∧ p</td>
+            </tr>
+
+            <tr>
+              <td>Distributive laws:</td>
+
+              <td>p ∨ ( q ∧ r ) ≡ ( p ∨ q ) ∧ ( p ∨ r )</td>
+
+              <td>p ∧ ( q ∨ r ) ≡ ( p ∧ q ) ∨ ( p ∧ r )</td>
+            </tr>
+
+            <tr>
+              <td>Identity laws:</td>
+
+              <td>p ∨ F ≡ p<br>
+              p ∨ T ≡ T</td>
+
+              <td>p ∧ F ≡ F<br>
+              p ∧ T ≡ p</td>
+            </tr>
+
+            <tr>
+              <td>Double negation law:</td>
+
+              <td>¬¬p ≡ p</td>
+            </tr>
+
+            <tr>
+              <td>Complement laws:</td>
+
+              <td>p ∨ ¬p ≡ T<br>
+              ¬T ≡ F</td>
+
+              <td>p ∧ ¬p ≡ F<br>
+              ¬F ≡ T</td>
+            </tr>
+
+            <tr>
+              <td>De Morgan's laws:</td>
+
+              <td>¬( p ∨ q ) ≡ ¬p ∧ ¬q</td>
+
+              <td>¬( p ∧ q ) ≡ ¬p ∨ ¬q</td>
+            </tr>
+
+            <tr>
+              <td>Absorption laws:</td>
+
+              <td>p ∨ (p ∧ q) ≡ p</td>
+
+              <td>p ∧ (p ∨ q) ≡ p</td>
+            </tr>
+
+            <tr>
+              <td>Conditional identities:</td>
+
+              <td>p → q ≡ ¬p ∨ q</td>
+
+              <td>p ↔ q ≡ ( p → q ) ∧ ( q → p )</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+
+    <div class="content-resource-container-static section-content">
+      <h1>Table 1.7.1: Summary of De Morgan's laws for quantified statements.</h1>
+      <div class="table">
+        <table>
+          <tbody>
+            <tr>
+              <td>¬∀x P(x) &nbsp; ≡ &nbsp; ∃x ¬P(x)</td>
+            </tr>
+
+            <tr>
+              <td>¬∃x P(x) &nbsp; ≡ &nbsp; ∀x ¬P(x)</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+
+    <div class="content-resource-container-static section-content">
+      <h1>Table 1.8.2: De Morgan's laws for nested quantified statements.</h1>
+      <div class="table">
+        <table>
+          <tbody>
+            <tr>
+              <td>¬∀x ∀y P(x, y) &nbsp;≡ &nbsp;∃x ∃y ¬P(x, y)</td>
+            </tr>
+
+            <tr>
+              <td>¬∀x ∃y P(x, y) &nbsp;≡ &nbsp; ∃x ∀y ¬P(x, y)</td>
+            </tr>
+
+            <tr>
+              <td>¬∃x ∀y P(x, y) &nbsp; ≡ &nbsp; ∀x ∃y ¬P(x, y)</td>
+            </tr>
+
+            <tr>
+              <td>¬∃x ∃y P(x, y) &nbsp; ≡ &nbsp; ∀x ∀y ¬P(x, y)</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+
+    <div class="content-resource-container-static section-content">
+      <h1>Table 1.11.1: Rules of inference known to be valid arguments.</h1>
+      <div class="table">
+        <table style="text-align:center;">
+          <tbody>
+            <tr>
+              <th>Rule of inference</th>
+
+              <th>Name</th>
+            </tr>
+
+            <tr>
+              <td>
+                <div style="float: left;">
+                  <div class="zyblock">
+                    p<br>
+                    p → q <span class="zyLn"></span> ∴ q
+                  </div>
+                </div>
+
+                <div style="display: block; height: 0px; clear: both;"></div>
+              </td>
+
+              <td>Modus ponens</td>
+            </tr>
+
+            <tr>
+              <td>
+                <div style="float: left;">
+                  <div class="zyblock">
+                    ¬q<br>
+                    p → q <span class="zyLn"></span> ∴ ¬p
+                  </div>
+                </div>
+
+                <div style="display: block; height: 0px; clear: both;"></div>
+              </td>
+
+              <td>Modus tollens</td>
+            </tr>
+
+            <tr>
+              <td>
+                <div style="float: left;">
+                  <div class="zyblock">
+                    p <span class="zyLn"></span> ∴ p ∨ q
+                  </div>
+                </div>
+
+                <div style="display: block; height: 0px; clear: both;"></div>
+              </td>
+
+              <td>Addition</td>
+            </tr>
+
+            <tr>
+              <td>
+                <div style="float: left;">
+                  <div class="zyblock">
+                    p ∧ q <span class="zyLn"></span> ∴ p
+                  </div>
+                </div>
+
+                <div style="display: block; height: 0px; clear: both;"></div>
+              </td>
+
+              <td>Simplification</td>
+            </tr>
+
+            <tr>
+              <td>
+                <div style="float: left;">
+                  <div class="zyblock">
+                    p<br>
+                    q <span class="zyLn"></span> ∴ p ∧ q
+                  </div>
+                </div>
+
+                <div style="display: block; height: 0px; clear: both;"></div>
+              </td>
+
+              <td>Conjunction</td>
+            </tr>
+
+            <tr>
+              <td>
+                <div style="float: left;">
+                  <div class="zyblock">
+                    p → q<br>
+                    q → r <span class="zyLn"></span> ∴ p → r
+                  </div>
+                </div>
+
+                <div style="display: block; height: 0px; clear: both;"></div>
+              </td>
+
+              <td>Hypothetical syllogism</td>
+            </tr>
+
+            <tr>
+              <td>
+                <div style="float: left;">
+                  <div class="zyblock">
+                    p ∨ q<br>
+                    ¬p <span class="zyLn"></span> ∴ q
+                  </div>
+                </div>
+
+                <div style="display: block; height: 0px; clear: both;"></div>
+              </td>
+
+              <td>Disjunctive syllogism</td>
+            </tr>
+
+            <tr>
+              <td>
+                <div style="float: left;">
+                  <div class="zyblock">
+                    p ∨ q<br>
+                    ¬p ∨ r <span class="zyLn"></span> ∴ q ∨ r
+                  </div>
+                </div>
+
+                <div style="display: block; height: 0px; clear: both;"></div>
+              </td>
+
+              <td>Resolution</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+
+    <footer>
+      <a href="https://github.com/fatehitech/logic-laws">https://github.com/fatehitech/logic-laws</a>
+    </footer>
+  </body>
 </html>
