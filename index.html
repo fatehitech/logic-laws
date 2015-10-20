@@ -3,10 +3,11 @@
   <head>
     <meta http-equiv="content-type" content="text/html; charset=utf-8" />
     <title>Laws of Logic</title>
-    <link rel="stylesheet" type="text/css" href="my.css" />
-    <link rel="stylesheet" type="text/css" href="zy.css" />
+    <link rel="stylesheet" type="text/css" href="css/my.css" />
+    <link rel="stylesheet" type="text/css" href="css/zy.css" />
+    <script type="text/javascript" src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
   </head>
-  <!-- ¬ → -->
+
   <body>
     <div class="content-resource-container-static section-content">
       <h1>English Expressions of Conditional p→q</h1>
@@ -420,6 +421,44 @@
                 { x : x ∉ A }
               </td>
             </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+
+    <div class="content-resource-container-static section-content">
+      <h1>Table 3.5.1: Set Identities.</h1>
+      <div class="table">
+        <table>
+          <tbody><tr><th>Name</th><th colspan="2">Identities</th></tr>
+            <tr><td>Commutative Laws</td><td>A ∩ B = B ∩ A</td>
+              <td>A ∪ B = B ∪ A</td></tr>
+            <tr><td>Associative  Laws</td><td>(A ∩ B) ∩ C  = A ∩ (B  ∩ C)</td>
+              <td>(A ∪ B) ∪ C  = A ∪ (B  ∪ C)</td></tr>
+            <tr><td>Distributive  Laws</td><td>A ∩ (B ∪ C)  = (A ∩ B)  ∪ (A ∩ C)</td>
+              <td>A ∪ (B ∩ C)  = (A ∪ B)  ∩ (A ∪ C)</td></tr>
+            <tr><td>Identity  Laws</td><td>A ∪ ∅  = A</td>
+              <td>A ∩ <i>U</i>  = A</td></tr>
+            <tr><td>Complement  Laws</td><td>A ∪ <span style="text-decoration: overline">A</span>  = <i>U</i></td>
+              <td>A ∩ <span style="text-decoration: overline">A</span>  = ∅</td></tr>
+            <tr>
+              <td>Domination  Laws</td><td>A ∪ <i>U</i>  = <i>U</i></td>
+              <td>A ∩ ∅  = ∅</td></tr>
+            <tr><td>Idempotent  Laws</td><td>A ∪ A  = A</td>
+              <td>A ∩ A  = A</td></tr>
+            <tr><td>Double Complement  Law</td><td colspan="2">
+                $$\overline{\overline{A}} = A$$
+              </td>
+            </tr>
+            <tr><td>De Morgan's  Laws</td><td><span style="text-decoration: overline">A ∩ B</span>  = 
+                <span style="text-decoration: overline">A</span> ∪ 
+                <span style="text-decoration: overline">B</span></td>
+              <td><span style="text-decoration: overline">A ∪ B</span>  = 
+                <span style="text-decoration: overline">A</span> ∩ 
+                <span style="text-decoration: overline">B</span></td></tr>
+            <tr>
+              <td>Absorption  Laws</td><td>A ∪ (A ∩ B) = A</td>
+              <td>A ∩ (A ∪ B)  = A</td></tr>
           </tbody>
         </table>
       </div>
